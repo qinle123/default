@@ -1,0 +1,285 @@
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.ag-cen {
+  align-items: center;
+}
+
+.ag-start {
+  align-items: flex-start;
+}
+
+.ag-end {
+  align-items: flex-end;
+}
+
+.ag-bet {
+  align-items: space-between;
+}
+.jus-cen {
+  justify-content: center;
+}
+
+.jus-start {
+  justify-content: flex-start;
+}
+
+.jus-end {
+  justify-content: flex-end;
+}
+
+.jus-bet {
+  justify-content: space-between;
+}
+
+.flex-1 {
+  flex: 1;
+}
+.jus-ard {
+  justify-content: space-around;
+}
+
+.flex-grow-1-auto {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+
+
+/* 超出省略 等字体控制 */
+.ell {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.line1 {
+  -webkit-line-clamp: 1;
+}
+.line2 {
+  -webkit-line-clamp: 2;
+}
+.textright {
+  text-align: right;
+}
+.textcen {
+  text-align: center;
+}
+
+.font13 {
+  font-size: 13px;
+}
+
+.font14 {
+  font-size: 14px;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+/* 浅色阴影 */
+.shadow1 {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)
+}
+/* 基础阴影 */
+.shadow2 {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+}
+
+/* 百分百高宽继承 */
+.block_full {
+  width: 100%;
+  height: 100%;
+}
+
+.app-wrap {
+  overflow-y: auto;
+  height: calc(100vh - 88px);
+}
+
+.font12 {
+  font-size: 12px;
+}
+
+/* 常用边距 */
+.mr10 {
+  margin-right: 10px;
+}
+
+.margin15 {
+  margin: 15px;
+}
+.margin20 {
+  margin: 20px;
+}
+
+.padding20 {
+  padding: 20px;
+}
+
+.padding15 {
+  padding: 15px;
+}
+
+/* 背景色彩 */
+.bgfff {
+  background: #fff;
+}
+
+/* cursor */
+.point {
+  cursor: pointer;
+}
+
+.min-wid1000 {
+  min-width: 1000px
+}
+
+.money:before {
+  content: "¥ ";
+}
+
+.require:before {
+  content: "*";
+  color: red;
+}
+
+
+/* margin */
+.mt5 {
+  margin-top: 5px;
+}
+.mr5 {
+  margin-right: 5px;
+}
+.mb5 {
+  margin-bottom: 5px;
+}
+.ml5 {
+  margin-left: 5px;
+}
+/* margin */
+.mt10 {
+  margin-top: 10px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+/* 20 */
+.mt20 {
+  margin-top: 20px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+/* 30 */
+.mt30 {
+  margin-top: 30px;
+}
+.mr30 {
+  margin-right: 30px;
+}
+.mb30 {
+  margin-bottom: 30px;
+}
+.ml30 {
+  margin-left: 30px;
+}
+
+.clear-fix { zoom:1; }
+.clear-fix:after { clear:both;content:'';display:block;width:0;height:0;visibility:hidden; }
+
+
+.tiny-scroll ::-webkit-scrollbar {
+  width: 3px;
+} /* 这是针对缺省样式 (必须的) */
+
+::-webkit-scrollbar-track {
+  background-color: #ffff;
+} /* 滚动条的滑轨背景颜色 */
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+} /* 滑块颜色 */
+
+::-webkit-scrollbar-corner {
+  background-color: black;
+} /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+
+.under-line {
+  position: relative;
+}
+.under-line:after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  transform: scaleY(0.5);
+  bottom: 0;
+  background: #dbdbdb;
+  left: 0;
+  right: 0;
+}
+.under-line_dash:after {
+  position: absolute;
+  content: '';
+  border-bottom: 1px dashed #000;
+  bottom: 0;
+  background: #dbdbdb;
+  left: 0;
+  right: 0;
+}
+
+.gray1 {
+  color: #303133;
+}
+.gray2 {
+  color: #606266;
+}
+.gray3 {
+  color: #909399;
+}
+.gray4 {
+  color: #C0C4CC;
+}
+
+
+/* fontsize */
+.font12 {
+  font-size: 12px;
+}
+.font14 {
+  font-size: 14px;
+}
+.font16 {
+  font-size: 16px;
+}
+.font18 {
+  font-size: 18px;
+}
+.font20 {
+  font-size: 20px;
+}
+.font22 {
+  font-size: 22px;
+}
