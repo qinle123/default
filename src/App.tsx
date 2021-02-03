@@ -1,13 +1,13 @@
-import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import BasicLayout from './layout/BasicLayout/index'
-import LoginLayout from './layout/LoginLayout/index'
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import BasicLayout from './layout/BasicLayout/index';
+import LoginLayout from './layout/LoginLayout/index';
 
-import './App.css'
-import 'antd/dist/antd.css' // or 'antd/dist/antd.less'
-import './assets/style/base.less'
+import './App.css';
+import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
+import './assets/style/base.less';
 
-function App() {
+function App(): JSX.Element {
   return (
     <Router>
       <Switch>
@@ -19,7 +19,7 @@ function App() {
         </Route>
       </Switch>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;

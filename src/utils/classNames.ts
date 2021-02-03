@@ -1,4 +1,3 @@
-
-export function classNames (...args: string[]):string {
-  return args.join(' ')
+export function classNames(...args: string[]): string {
+  return args.join(' ');
 }

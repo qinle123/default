@@ -1,2 +1,2 @@
 // logo 图地址
-export const LOGO_SRC:string = 'https://cdn.daddylab.com/images/logo/logo183.png';
+export const LOGO_SRC = 'https://cdn.daddylab.com/images/logo/logo183.png';

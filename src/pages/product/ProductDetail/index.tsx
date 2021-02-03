@@ -1,9 +1,5 @@
-export interface ProductDetailProps {
-  
-}
- 
-const ProductDetail: React.SFC<ProductDetailProps> = () => {
-  return <div>detail</div>
-}
- 
+const ProductDetail: React.FC = () => {
+  return <div>detail</div>;
+};
+
 export default ProductDetail;

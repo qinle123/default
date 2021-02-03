@@ -1,18 +1,18 @@
-import About from "./About/About";
-import Home from "./Home";
-import ProductDetail from "./pages/product/ProductDetail";
-import ProductList from "./pages/product/ProductList/index";
+import About from './About/About';
+import Home from './Home';
+import ProductDetail from './pages/product/ProductDetail';
+import ProductList from './pages/product/ProductList/index';
 
-export type menuRouteType = {
-  name: string,
-  menuProps?: any,
-  path: string,
-  routeProps?: any,
-  menuItems?: menuRouteType[],
-  component?: React.FC
+export interface menuRouteType {
+  name: string;
+  menuProps?: unknown;
+  path: string;
+  routeProps?: unknown;
+  menuItems?: menuRouteType[];
+  component?: React.FC;
 }
 
-export const menuRoutes :menuRouteType[] = [
+export const menuRoutes: menuRouteType[] = [
   {
     name: '商品',
     path: '/product',
@@ -20,14 +20,14 @@ export const menuRoutes :menuRouteType[] = [
       {
         name: '列表',
         path: '/product/list',
-        component: ProductList
+        component: ProductList,
       },
       {
         name: '详情',
         path: '/product/',
-        component: ProductDetail
-      }
-    ]
+        component: ProductDetail,
+      },
+    ],
   },
   {
     name: '主页',
@@ -35,7 +35,7 @@ export const menuRoutes :menuRouteType[] = [
     // menuItems: [],
     path: '/home',
     routeProps: {},
-    component: Home
+    component: Home,
   },
   {
     name: '关于',
@@ -43,7 +43,7 @@ export const menuRoutes :menuRouteType[] = [
     // menuItems: [],
     path: '/about',
     routeProps: {},
-    component: About
+    component: About,
   },
   // {
   //   menuType: 'subMenu',
@@ -54,4 +54,4 @@ export const menuRoutes :menuRouteType[] = [
   //     component: Home
   //   }
   // },
-]
+];
