@@ -31,7 +31,7 @@ function getRelativeUrl(url: string, query?: Record<string, unknown>) {
 }
 
 function getToken(): string {
-  return `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MTI1MTQ2MzksImlhdCI6MTYxMjQyODIzOSwidXNlciI6eyJ0aW1lc3RhbXAiOiIxNjEyNDI4MjM5NTgyMDA0MDQzIiwidXNlcl9pZCI6Mjc0NDA3Mn19.Kh093N4bgp8d2BRKlaIlT0G5VEWauFSPqpC4dWRNE50`;
+  return `Bearer test`;
 }
 
 export function request(method: string, url: string, params: requestParamsType): Promise<requestReturnType> {
