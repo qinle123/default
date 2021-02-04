@@ -1,11 +1,22 @@
 import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
+import { useEffect } from 'react';
+import { editName } from '../../service/demo';
 
 export interface RightHeaderProps {
   collapsed: boolean;
   collMenu(flag: boolean): void;
 }
 
-const RightHeader: React.FC<RightHeaderProps> = (props) => {
+const RightHeader: React.FC<RightHeaderProps> = props => {
+  useEffect(() => {
+    // baseInfo({ id: 1082, channel: 'h5' });
+    editName({
+      file_id: 1743,
+      file_name: 'uu.jpg',
+    }).then(res => {
+      console.log(res, 99);
+    });
+  }, []);
   return (
     <div
       className="flex-row jus-bet"

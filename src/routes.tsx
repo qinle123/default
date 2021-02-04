@@ -2,7 +2,7 @@ import About from './About/About';
 import Home from './Home';
 import ProductDetail from './pages/product/ProductDetail';
 import ProductList from './pages/product/ProductList/index';
-
+import { HomeOutlined } from './utils/Icon';
 export interface menuRouteType {
   name: string;
   menuProps?: unknown;
@@ -16,6 +16,9 @@ export const menuRoutes: menuRouteType[] = [
   {
     name: '商品',
     path: '/product',
+    menuProps: {
+      icon: <HomeOutlined />,
+    },
     menuItems: [
       {
         name: '列表',
@@ -31,7 +34,9 @@ export const menuRoutes: menuRouteType[] = [
   },
   {
     name: '主页',
-    menuProps: {},
+    menuProps: {
+      icon: <HomeOutlined />,
+    },
     // menuItems: [],
     path: '/home',
     routeProps: {},
@@ -39,7 +44,9 @@ export const menuRoutes: menuRouteType[] = [
   },
   {
     name: '关于',
-    menuProps: {},
+    menuProps: {
+      icon: <HomeOutlined />,
+    },
     // menuItems: [],
     path: '/about',
     routeProps: {},
