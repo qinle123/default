@@ -8,7 +8,7 @@ export interface LogoProps {
   collapsed: boolean;
 }
 
-const Logo: React.FC<LogoProps> = (props) => {
+const Logo: React.FC<LogoProps> = props => {
   return (
     <div className={classNames(sty.logo, 'flex-row', 'jus-cen', 'ag-cen')}>
       <Image width={50} src={LOGO_SRC} />

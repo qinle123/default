@@ -3757,6 +3757,11 @@ cosmiconfig@^7.0.0:
     path-type "^4.0.0"
     yaml "^1.10.0"
 
+crandowjs@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/crandowjs/-/crandowjs-1.0.7.tgz#80fea6a3993c0eab0e42a8b63d116e15728487e2"
+  integrity sha512-aoRcV80gO+4o5eIpQq1uKwbQYQn9mZ1pM3ThPwggFUacQb6LDfukjMIpXxldDwomYDBeSBPjw8YLzLeLGjiXCQ==
+
 create-ecdh@^4.0.0:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/create-ecdh/-/create-ecdh-4.0.4.tgz#d6e7f4bffa66736085a0762fd3a632684dabcc4e"

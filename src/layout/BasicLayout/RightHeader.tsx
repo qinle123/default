@@ -9,7 +9,6 @@ export interface RightHeaderProps {
 
 const RightHeader: React.FC<RightHeaderProps> = props => {
   useEffect(() => {
-    // baseInfo({ id: 1082, channel: 'h5' });
     editName({
       file_id: 1743,
       file_name: 'uu.jpg',

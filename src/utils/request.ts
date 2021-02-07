@@ -1,9 +1,10 @@
 import { API_PREFIX } from './constans';
 
-interface requestReturnType {
+export interface requestReturnType {
   flag: boolean;
   code: number;
   data: unknown;
+  msg: string;
 }
 
 interface requestParamsType {
