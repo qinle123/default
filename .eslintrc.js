@@ -16,10 +16,7 @@ module.exports = {
   rules: {
     // 自定义规则
     // e.g. "@typescript-eslint/explicit-function-return-type": "off",
-    'prettier/prettier': [
-      'error',
-      { trailingComma: 'all', singleQuote: true, parser: 'flow', printWidth: 120, arrowParens: 'avoid' },
-    ],
+    'prettier/prettier': ['error', { trailingComma: 'all', singleQuote: true, printWidth: 120, arrowParens: 'avoid' }],
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
