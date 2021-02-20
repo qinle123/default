@@ -2,6 +2,7 @@ import { context } from '@/appReducer';
 import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
 import { useContext, useEffect } from 'react';
 import { editName } from '../../service/demo';
+import { Image } from 'antd';
 
 export interface RightHeaderProps {
   collapsed: boolean;
@@ -9,11 +10,10 @@ export interface RightHeaderProps {
 }
 
 const UserAvator: React.FC = () => {
-  const { state, dispatch } = useContext(context);
+  const { state } = useContext(context);
   return (
-    <div className="flex-row row-start">
-      <div>{state.count}</div>
-      <div onClick={() => dispatch({ type: 'foo', payload: { foo: 80 } })}>dmwo</div>
+    <div className="flex-row row-start ag-cen mr10">
+      <Image src={state.avator} width={40} height={40} style={{ borderRadius: 20 }}></Image>
     </div>
   );
 };

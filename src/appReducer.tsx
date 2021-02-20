@@ -1,28 +1,31 @@
 import React, { useReducer } from 'react';
+import { noop } from './utils/common';
 
-const initialState = {
-  count: 0,
-};
-const context = React.createContext<Record<string, any>>({});
-
-interface actionType {
+interface ActionType {
   type: string;
   payload: any;
 }
 
-function reducer(state: Record<string, any>, action: actionType): any {
+interface StateType {
+  avator: string;
+}
+
+const initialState = {
+  avator: '',
+};
+const context = React.createContext<{ state: StateType; dispatch: React.Dispatch<ActionType> }>({
+  state: initialState,
+  dispatch: noop,
+});
+
+function reducer(state: StateType, action: ActionType): StateType {
   switch (action.type) {
-    case 'reset':
+    case 'RESET':
       return initialState;
-    case 'add':
+    case 'SET_AVATOR':
       return {
         ...state,
-        count: state.count + 1,
-      };
-    case 'foo':
-      return {
-        ...state,
-        count: action.payload.foo,
+        avator: action.payload.avator,
       };
     default:
       return state;
@@ -30,10 +33,7 @@ function reducer(state: Record<string, any>, action: actionType): any {
 }
 
 const ContextProvider: React.FC = props => {
-  type useReducerResType = [any, React.Dispatch<actionType>];
-
-  const res: useReducerResType = useReducer(reducer, initialState);
-  const [state, dispatch] = res;
+  const [state, dispatch] = useReducer(reducer, initialState);
   return <context.Provider value={{ state, dispatch }}>{props.children}</context.Provider>;
 };
 
