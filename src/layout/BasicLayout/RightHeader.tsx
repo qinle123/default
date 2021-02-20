@@ -1,11 +1,22 @@
+import { context } from '@/appReducer';
 import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
-import { useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 import { editName } from '../../service/demo';
 
 export interface RightHeaderProps {
   collapsed: boolean;
   collMenu(flag: boolean): void;
 }
+
+const UserAvator: React.FC = () => {
+  const { state, dispatch } = useContext(context);
+  return (
+    <div className="flex-row row-start">
+      <div>{state.count}</div>
+      <div onClick={() => dispatch({ type: 'foo', payload: { foo: 80 } })}>dmwo</div>
+    </div>
+  );
+};
 
 const RightHeader: React.FC<RightHeaderProps> = props => {
   useEffect(() => {
@@ -34,6 +45,7 @@ const RightHeader: React.FC<RightHeaderProps> = props => {
       >
         {props.collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
       </div>
+      <UserAvator></UserAvator>
     </div>
   );
 };
