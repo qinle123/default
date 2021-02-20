@@ -74,8 +74,10 @@ const BasicLayout: React.FC<unknown> = () => {
             }}
           />
         </Header>
-        <Content>{menuRoutes.map(route => renderRoute(route))}</Content>
-        <Footer>Footer</Footer>
+        <Content style={{ height: '100%', overflowY: 'auto' }} className="flex-col jus-start">
+          <div style={{ flex: 1 }}>{menuRoutes.map(route => renderRoute(route))}</div>
+          <Footer className="textcen">Copyright © 2015-2021 xxxxxx.com 版权所有 </Footer>
+        </Content>
       </Layout>
     </Layout>
   );
